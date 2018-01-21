@@ -1,1 +1,2 @@
-# FC_II. Group: Harveen Oberoi, Daniel Rojas Coy, Lucas Duarte Bahia, Jordan Giebas
+# Financial Computing II: MSCF, Carnegie Mellon University
+This repo will contain the various directories for each of the homeworks we encounter as a group (Harveen Oberoi, Daniel Rojas Coy, Lucas Duarte Bahia, Jordan Giebas) throughout the Financial Computing II course in the MS Computational Finance program at Carnegie Mellon Univeristy. This is simply used as version control, and is not to be shared.
