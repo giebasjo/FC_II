@@ -88,8 +88,24 @@ public:
 	virtual ~Minus() {}
 	virtual string to_string() {
 		ostringstream oss;
+		/*
 		oss << "(" << left->to_string() << " - "
 			<< right->to_string() << ")";
+		*/
+		
+		// This handles the case of a substraction with a negative term on the right side
+		// e.g changes  1 - -2 to 1 + 2
+		string temp = (right->to_string());
+
+		if (temp.substr(0,1)==string("-")){
+			oss << "(" << left->to_string() << " + "
+				<< temp.substr(1) << ")";
+		}
+		else {
+			oss << "(" << left->to_string() << " - "
+				<< right->to_string() << ")";
+		}
+		
 		return oss.str();
 	}
 	virtual double to_value() {
