@@ -19,6 +19,10 @@ Employee::Employee(const string& n, double r) : id(next_id++), name(n), rate(r >
     num_emps++;
 }
 
+Employee::~Employee() {
+    num_emps--;
+}
+
 void Employee::print() const {
     cout << "Employee # " << id << ", name: "
          << name << ", rate: " << fixed << setprecision(2) << rate << '\n';
@@ -28,9 +32,7 @@ void Employee::set_rate(double r)
 { rate = (r > MINWAGE ? r : MINWAGE); }
 
 int Employee::get_next_id() {
-
     return next_id++;
-
 }
 
 int Employee::get_num_emps() {

@@ -19,6 +19,7 @@ public:
     void set_bonus_percentage(double);
     double get_bonus_percentage() const;
     static int get_num_ceos();
+    ~CEO();
 private:
     static int no_ceos;
     double profit_target;

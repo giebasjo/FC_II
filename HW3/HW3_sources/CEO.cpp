@@ -17,6 +17,10 @@ CEO::CEO(const string& n, double r, double b, double t, double p) : Manager(n, r
     no_ceos++;
 }
 
+CEO::~CEO() {
+    no_ceos--;
+}
+
 void CEO::set_profit_target(double t)
 {
 	profit_target = t;

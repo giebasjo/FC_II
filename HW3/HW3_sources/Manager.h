@@ -21,6 +21,7 @@ public:
     void set_title(const string& s) { title = s; }
     string get_title() const { return title; }
     static int get_num_mgrs();
+    ~Manager();
 private:
     string title;
     static int no_mgrs;

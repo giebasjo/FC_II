@@ -19,6 +19,10 @@ Manager::Manager(const string& n, double r, const string& t, double b) : Employe
     no_mgrs++;
 }
 
+Manager::~Manager() {
+    no_mgrs--;
+}
+
 void Manager::set_budget(double b)
 { budget = (b > 0.0 ? b : DEFAULT_BUDGET); }
 

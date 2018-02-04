@@ -17,6 +17,7 @@ public:
     int get_id() const { return id; }
     static int get_next_id();
     static int get_num_emps();
+    virtual ~Employee();
 private:
     static int next_id; // part(a) static member var
     static int num_emps;
