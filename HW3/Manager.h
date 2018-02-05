@@ -13,8 +13,8 @@ using namespace std;
 // a Manager is a kind of Employee
 class Manager : public Employee {
 public:
-    Manager(const string& n, double r,
-            const string& t, double b);
+    Manager(const string& n, double r = 51.25,
+            const string& t = "Manager", double b = 350000.0);
     virtual void print() const;  // override base class print
     void set_budget(double b);
     double get_budget() const;

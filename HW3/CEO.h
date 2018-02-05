@@ -12,7 +12,7 @@ using namespace std;
 // a CEO is a kind of Manager
 class CEO : public Manager {
 public:
-    CEO(const string& n, double r, double b, double t, double p);
+    CEO(const string& n, double r = 92.50, double b = 1000000.0, double t = 700000.0, double p = 25.0);
     void print() const;
     void set_profit_target(double);
     double get_profit_target() const;

@@ -10,7 +10,7 @@ using namespace std;
 
 class Employee {
 public:
-    Employee(const string& n, double r);
+    Employee(const string& n, double r = 37.5);
     virtual void print() const;
     void set_rate(double r);
     double get_rate() const;
