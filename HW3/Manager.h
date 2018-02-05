@@ -17,9 +17,9 @@ public:
             const string& t, double b);
     virtual void print() const;  // override base class print
     void set_budget(double b);
-    double get_budget() const { return budget; }
+    double get_budget() const;
     void set_title(const string& s) { title = s; }
-    string get_title() const { return title; }
+    string get_title() const;
     static int get_num_mgrs();
     ~Manager();
 private:
@@ -30,5 +30,15 @@ private:
     Manager(const Manager&);    // no clones
     Manager& operator=(const Manager&);
 };
+
+inline double Manager::get_budget() const
+{ return budget; }
+
+inline string Manager::get_title() const
+{ return title; }
+
+inline int Manager::get_num_mgrs() 
+{ return no_mgrs; }
+
 
 #endif

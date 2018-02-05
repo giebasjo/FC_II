@@ -33,8 +33,8 @@ void Manager::print() const
     cout << "title: " << title << '\n';
     cout << "budget: " << fixed << setprecision(2) << budget << '\n';
 }
-
+/*
 int Manager::get_num_mgrs() {
     return no_mgrs;
 }
-
+*/

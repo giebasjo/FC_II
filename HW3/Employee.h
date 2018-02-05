@@ -13,8 +13,8 @@ public:
     Employee(const string& n, double r);
     virtual void print() const;
     void set_rate(double r);
-    double get_rate() const { return rate; };
-    int get_id() const { return id; }
+    double get_rate() const;
+    int get_id() const;
     static int get_next_id();
     static int get_num_emps();
     virtual ~Employee();
@@ -28,5 +28,17 @@ private:
     Employee(const Employee&);    // no clones
     Employee& operator=(const Employee&);
 };
+
+inline double Employee::get_rate() const
+{ return rate;  }
+
+inline int Employee::get_id() const 
+{ return id;  }
+
+inline int Employee::get_next_id() 
+{ return next_id++; }
+
+inline int Employee::get_num_emps()
+{ return num_emps; }
 
 #endif

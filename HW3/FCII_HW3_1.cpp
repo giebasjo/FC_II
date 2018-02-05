@@ -78,7 +78,7 @@ int main()
     p->print();
     */
 
-#if 1   // part (b) test code
+#if 0   // part (b) test code
     {  // nested block: local objects created here will be destroyed at end of block
         cout << "\nIn nested block:\n";
         cout << "Testing functions: no objects initialised yet" << endl;
@@ -110,9 +110,10 @@ int main()
     cout << "# of CEOs:        " << CEO::get_num_ceos() << '\n';
 #endif
 
-#if 0  // part (c) test code
+#if 1  // part (c) test code
     cout << "Should not be much to see here: explicit inline functions should work\n"
 	 << "just like the functions they replaced.\n";
+    cout << "Yes- they work well. JG" << endl;
 #endif
 
 #if 0  // part (d) test code

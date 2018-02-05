@@ -30,7 +30,7 @@ void Employee::print() const {
 
 void Employee::set_rate(double r)
 { rate = (r > MINWAGE ? r : MINWAGE); }
-
+/*
 int Employee::get_next_id() {
     return next_id++;
 }
@@ -38,3 +38,4 @@ int Employee::get_next_id() {
 int Employee::get_num_emps() {
     return num_emps;
 }
+*/

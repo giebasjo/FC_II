@@ -25,22 +25,22 @@ void CEO::set_profit_target(double t)
 {
 	profit_target = t;
 }
-
+/*
 double CEO::get_profit_target() const
 {
 	return profit_target;
 }
-
+*/
 void CEO::set_bonus_percentage(double p)
 {
 	bonus_percentage = p;
 }
-
+/*
 double CEO::get_bonus_percentage() const
 {
 	return bonus_percentage;
 }
-
+*/
 // NOTE: added << fixed << setprecision(2) for money amounts
 void CEO::print() const
 {
@@ -49,18 +49,11 @@ void CEO::print() const
 	cout << "profit_target: " << fixed << setprecision(2) << profit_target << '\n';
 	cout << "bonus_percentage: " << bonus_percentage << '\n';
 }
-
+/*
 int CEO::get_num_ceos() {
     return no_ceos;
 }
-
-
-
-
-
-
-
-
+*/
 
 
 

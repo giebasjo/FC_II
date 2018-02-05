@@ -29,4 +29,13 @@ private:
     CEO& operator=(const CEO&);
 };
 
+inline double CEO::get_profit_target() const 
+{ return profit_target; }
+
+inline double CEO::get_bonus_percentage() const
+{ return bonus_percentage; }
+
+inline int CEO::get_num_ceos() 
+{ return no_ceos; }
+
 #endif
