@@ -3,24 +3,36 @@
 // Author(s):
 
 #include <iostream>     // cout, <<
+#include <string>
+#include <type_traits>
 using namespace std;
 
 #include "Employee.h"   // Employee class
 #include "Manager.h"    // Manager class
 #include "CEO.h"        // CEO class
 
-// Part (e): Buy soup function
+/*
+void buy_soup( Employee& e, string ss ) {
 
+    Employee* ptr = &e;
 
+    if ( Employee *pe = dynamic_cast<Employee*>(ptr) ) {
+        cout << "No soup for you" << endl; 
+    }
+    else if ( Manager *pm = dynamic_cast<Manager*>(ptr) ) {
+        cout << "Chicken noodle soup for you" << endl;
+    }
+    else if ( CEO *pc = dynamic_cast<CEO*>(ptr) ) {
+        cout << "Here is your " << ss << ". Please come again!" << endl;
+    }
 
-
-
+}
+*/
 int main()
 {
     Employee alex("Alex", 57.25);
     Employee bob("Bob", 63.10);
     Manager carl("Carl", 66.75, "Boss", 0.0);
-
 
     cout << "Alex's ID: " << alex.get_id() << '\n';
     bob.set_rate(6.31);     // 90% pay cut!  Ouch!
@@ -153,7 +165,7 @@ int main()
     buy_soup(carl, "Mushroom");         // Chicken noodle soup for you.
     buy_soup(hank, "Tomato");           // No soup for you!
     buy_soup(joe, "Lobster Bisque");    // Here is your Lobster Bisque.  Please come again!
-    buy_soup("Mary", "Clam Chowder");   // should not compile!
+    //buy_soup("Mary", "Clam Chowder");   // should not compile!
 #endif
 
 }
