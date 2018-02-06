@@ -9,6 +9,11 @@
 using namespace std;
 
 // define min_of<T> and abs_val<T> templates functions here
+template <typename T>
+T min_of( T x, T y ) { return (x < y) ? x : y; }
+
+template<typename T>
+T abs_val( T x ) { return (x < 0) ? -1.0*x : x;  }
 
 int main()
 {

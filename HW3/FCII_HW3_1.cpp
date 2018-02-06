@@ -11,23 +11,19 @@ using namespace std;
 #include "Manager.h"    // Manager class
 #include "CEO.h"        // CEO class
 
-/*
-void buy_soup( Employee& e, string ss ) {
+void buy_soup( const Employee& e, string ss ) {
 
-    Employee* ptr = &e;
-
-    if ( Employee *pe = dynamic_cast<Employee*>(ptr) ) {
-        cout << "No soup for you" << endl; 
+    if ( dynamic_cast<CEO*>(const_cast<Employee*>(&e))  ) {
+        cout << "Here is your " << ss << ". Please come again!" << endl;;
     }
-    else if ( Manager *pm = dynamic_cast<Manager*>(ptr) ) {
+    else if ( dynamic_cast<Manager*>(const_cast<Employee*>(&e))  ) {
         cout << "Chicken noodle soup for you" << endl;
     }
-    else if ( CEO *pc = dynamic_cast<CEO*>(ptr) ) {
-        cout << "Here is your " << ss << ". Please come again!" << endl;
+    else {
+        cout << "No soup for you!" << endl;
     }
 
 }
-*/
 int main()
 {
     Employee alex("Alex", 57.25);
