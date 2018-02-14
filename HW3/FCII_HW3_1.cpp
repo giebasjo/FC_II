@@ -26,6 +26,8 @@ void buy_soup( const Employee& e, string ss ) {
 }
 int main()
 {
+
+    cout << "\n PART (A) \n" << endl;
     Employee alex("Alex", 57.25);
     Employee bob("Bob", 63.10);
     Manager carl("Carl", 66.75, "Boss", 0.0);
@@ -90,8 +92,9 @@ int main()
     p = &joe;
     p->print();
 
-#if 0   // part (b) test code
+#if 1   // part (b) test cod
     {  // nested block: local objects created here will be destroyed at end of block
+        cout << "\n PART (B) \n" << endl;
         cout << "\nIn nested block:\n";
         cout << "Testing functions: no objects initialised yet" << endl;
         cout << "Next Employee id: " << Employee::get_next_id() << '\n';
@@ -122,14 +125,16 @@ int main()
     cout << "# of CEOs:        " << CEO::get_num_ceos() << '\n';
 #endif
 
-#if 0  // part (c) test code
+#if 1  // part (c) test code
+    cout << "\n PART(C) \n" << endl;
     cout << "Should not be much to see here: explicit inline functions should work\n"
 	 << "just like the functions they replaced.\n";
     cout << "Yes- they work well. JG" << endl;
 #endif
 
-#if 0 // part (d) test code
+#if 1 // part (d) test code
     {
+        cout << "\n PART(D) \n" << endl;
 	cout << "In part (d) nested block:\n";
 	Employee gene("Gene");
 	Employee hal("Hal", 77.75);
